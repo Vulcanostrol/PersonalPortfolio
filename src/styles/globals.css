@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text: #9ca3af;
+    --color-primary: 255 115 179;
+    --color-secondary: 111 114 185;
+  }
+}
+
+p:not(.text-base) {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
