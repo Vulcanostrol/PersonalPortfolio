@@ -15,13 +15,15 @@ type PersonalityName = "array"
 type Personality = {
   name: PersonalityName,
   display: string,
+  image: string,
   description: string,
 }
 
-const personalities: Array< Personality> = [
+const personalities: Array<Personality> = [
   {
     name: "array",
     display: "an Array",
+    image: "array.jpg",
     description: "You are a traditional person. You like to do things the way they were always done before. With you, " +
       "what you see is what you get" +
       "\n" +
@@ -38,6 +40,7 @@ const personalities: Array< Personality> = [
   {
     name: "linked-list",
     display: "a Linked List",
+    image: "linked-list.jpg",
     description: "You live life for the journey, not the destination. With you, people never know where they might end " +
       "up!" +
       "\n" +
@@ -56,6 +59,7 @@ const personalities: Array< Personality> = [
   {
     name: "stack",
     display: "a Stack",
+    image: "stack.jpg",
     description: "You are a person of order. You enjoy optimal solutions over fair solutions. With the Trolley Problem, " +
       "you would pull the lever to save five people over one." +
       "\n" +
@@ -74,6 +78,7 @@ const personalities: Array< Personality> = [
   {
     name: "queue",
     display: "a Queue",
+    image: "queue.jpg",
     description: "You are a person of justice! Everyone deserves a chance, and everyone gets their turn. You never cut " +
       "in line." +
       "\n" +
@@ -92,6 +97,7 @@ const personalities: Array< Personality> = [
   {
     name: "binary-tree",
     display: "a ",
+    image: "binary-tree.jpg",
     description: "You are a person that sees the world in dualities. You believe in good and evil and like to explore " +
       "your options before you make choices." +
       "\n" +
@@ -110,6 +116,7 @@ const personalities: Array< Personality> = [
   {
     name: "heap",
     display: "a Heap",
+    image: "heaps.jpg",
     description: "You are a person that enjoys life. In groups, you live more in the background. You believe small actions " +
       "can impact your life in major ways, but you are fine with that." +
       "\n" +
@@ -128,6 +135,7 @@ const personalities: Array< Personality> = [
   {
     name: "hash-map",
     display: "a Hash-Map",
+    image: "hash-map.jpg",
     description: "You are a perfectionist. You do not settle for a solution that is anything less than perfect." +
       "\n" +
       "The Hash Map personality is resourceful and innovative. They have a natural ability to find solutions to problems and are able to think creatively to come up with new ideas. Hash Maps are excellent at synthesizing information and are able to see connections and patterns where others may not." +
@@ -145,6 +153,7 @@ const personalities: Array< Personality> = [
   {
     name: "graph",
     display: "a Graph",
+    image: "graph.jpg",
     description: "You are a social person. Everyone in the group might know each other, but they all get along well " +
       "with you." +
       "\n" +
@@ -163,6 +172,7 @@ const personalities: Array< Personality> = [
   {
     name: "fibonacci",
     display: "a Fibonacci Heap",
+    image: "fibonacci.jpg",
     description: "You are a lone wolf. Nobody truly \"gets you\". Everyone knows you are really smart, but they just do " +
       "not understand what in the world you are talking about most of the time." +
       "\n" +
@@ -613,6 +623,7 @@ export default function WhichDataStructureAreYou() {
           <p>
             You did it! You are {personality.display}!
           </p>
+          <img className="mr-4 w-full" src={`memes/${personality.image}`} alt="This is you!"/>
           {personality.description.split("\n").map((paragraph, index) => {
             return <p key={index}>
               {paragraph}
