@@ -20,7 +20,6 @@ export default function Resume() {
                   <div>
                     <Link href="/" rel="author" className="text-xl font-bold text-gray-900 dark:text-white">Koen van den Brink</Link>
                     <p className="text-base font-light text-gray-500 dark:text-gray-400">Full-stack developer</p>
-                    <p className="text-base font-light text-gray-500 dark:text-gray-400"><time dateTime="2023-03-15" title="March 15th, 2023">March. 15, 2023</time></p>
                   </div>
                 </div>
               </address>
