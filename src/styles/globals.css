@@ -10,14 +10,31 @@
   }
 }
 
-p:not(.text-base) {
-  margin-top: 1.3rem;
-  margin-bottom: 1.3rem;
+p:not(.text-base), ul:not(.text-base), ol:not(.text-base) {
   color: var(--color-text);
+}
+
+a.link-base {
+  text-decoration: underline;
+}
+
+a.link-base:link {
+  color: #0000EE;
+}
+
+a.link-base:visited {
+  color: #551A8B;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+  a.link-base:link {
+    color: #0080F0;
+  }
+
+  a.link-base:visited {
+    color: #8030F0;
   }
 }
