@@ -1,4 +1,4 @@
-import Accordion from "@/components/accordion";
+import Accordion from "@/components/Accordion";
 
 export default function Education() {
   return (
@@ -65,6 +65,15 @@ export default function Education() {
               <time dateTime="2017-08-01" title="August, 2017">2017</time>
               &nbsp;-&nbsp;
               <time dateTime="2020-07-01" title="July, 2020">2020</time>
+            </p>
+          </>
+        )}
+        body={(
+          <>
+            <p>
+              My bachelor thesis (<a href="http://essay.utwente.nl/82333/1/Bachelor_Thesis.pdf" className="link-base">
+              Finding “The Drop”: Recognizing the climax in electronic music using classification models</a>) was about
+              using ML to find the chorus in electronic dance music. It was recognized with a grading of 9.5/10.
             </p>
           </>
         )}
