@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Link from "next/link";
-import Accordion from "@/components/accordion";
+import Accordion from "@/components/Accordion";
 import WorkExperience from "@/pages/cv/experience";
 import Education from "@/pages/cv/education";
+import Skills from "@/pages/cv/skills";
 
 export default function Cv() {
   return (
@@ -33,6 +34,7 @@ export default function Cv() {
             </header>
             <WorkExperience />
             <Education />
+            <Skills />
           </article>
         </div>
       </main>
