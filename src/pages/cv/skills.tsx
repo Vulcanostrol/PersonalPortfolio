@@ -49,7 +49,7 @@ export default function Skills() {
           <SkillBadge skillName="Lightning" category="machineLearning" stars={4} />
           <SkillBadge skillName="Ray Tune" category="machineLearning" stars={2} />
           <SkillBadge skillName="Pandas" category="machineLearning" stars={4} />
-          <SkillBadge skillName="Pandas" category="machineLearning" stars={3} />
+          <SkillBadge skillName="Polars" category="machineLearning" stars={3} />
           <SkillBadge skillName="GeoPandas" category="machineLearning" stars={2} />
         </>
       ) : undefined}
