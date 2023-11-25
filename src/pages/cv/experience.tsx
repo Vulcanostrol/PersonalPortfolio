@@ -1,16 +1,17 @@
 import Accordion from "@/components/Accordion";
+import {header, timePeriodText} from "@/styles/shorthands";
 
 export default function WorkExperience() {
   return (
     <>
-      <h1 className="mb-4 mt-16 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+      <h1 className={header}>
         💼 My experience
       </h1>
       <Accordion
         header={(
           <>
             Machine Learning Engineer (GecoSistema)
-            <p className="text-base font-light text-gray-500 dark:text-gray-400">
+            <p className={timePeriodText}>
               <time dateTime="2023-06-01" title="June, 2023">June, 2023</time>
               &nbsp;-&nbsp;
               <time dateTime="2023-10-01" title="October, 2023">October, 2023</time>
@@ -50,10 +51,10 @@ export default function WorkExperience() {
         header={(
           <>
             Co-founder & CTO (Awaves)
-            <p className="text-base font-light text-gray-500 dark:text-gray-400">
+            <p className={timePeriodText}>
               <time dateTime="2019-01-01" title="January, 2019">January, 2019</time>
               &nbsp;-&nbsp;
-              <time dateTime="2023-10-01" title="Now">Now</time>
+              <time dateTime="2023-10-01" title="November, 2023">November, 2023</time>
             </p>
           </>
         )}
@@ -88,7 +89,7 @@ export default function WorkExperience() {
         header={(
           <>
             Data Analyst (Esports Team Twente)
-            <p className="text-base font-light text-gray-500 dark:text-gray-400">
+            <p className={timePeriodText}>
               <time dateTime="2020-09-01" title="September, 2020">September, 2020</time>
               &nbsp;-&nbsp;
               <time dateTime="2022-09-01" title="September, 2022">September, 2022</time>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  print-color-adjust: exact;
+}
+
 @layer base {
   :root {
     --color-text: #9ca3af;

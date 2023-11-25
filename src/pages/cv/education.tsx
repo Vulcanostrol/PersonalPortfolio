@@ -1,16 +1,17 @@
 import Accordion from "@/components/Accordion";
+import {header, timePeriodText} from "@/styles/shorthands";
 
 export default function Education() {
   return (
     <>
-      <h1 className="mb-4 mt-16 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+      <h1 className={header}>
         🎓 My education
       </h1>
       <Accordion
         header={(
           <>
             Master of Science - Data Science (EIT Digital, double master)
-            <p className="text-base font-light text-gray-500 dark:text-gray-400">
+            <p className={timePeriodText}>
               <time dateTime="2020-08-01" title="August, 2020">2020</time>
               &nbsp;-&nbsp;
               <time dateTime="2022-10-01" title="October, 2022">2022</time>
@@ -36,7 +37,7 @@ export default function Education() {
         header={(
           <>
             Bachelor of Honours - Processes of Change (University of Twente)
-            <p className="text-base font-light text-gray-500 dark:text-gray-400">
+            <p className={timePeriodText}>
               <time dateTime="2018-01-01" title="January, 2018">2018</time>
               &nbsp;-&nbsp;
               <time dateTime="2019-07-01" title="July, 2019">2019</time>
@@ -61,7 +62,7 @@ export default function Education() {
         header={(
           <>
             Bachelor of Science - Computer Science (University of Twente)
-            <p className="text-base font-light text-gray-500 dark:text-gray-400">
+            <p className={timePeriodText}>
               <time dateTime="2017-08-01" title="August, 2017">2017</time>
               &nbsp;-&nbsp;
               <time dateTime="2020-07-01" title="July, 2020">2020</time>

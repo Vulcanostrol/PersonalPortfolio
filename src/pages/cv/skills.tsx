@@ -2,6 +2,7 @@ import SkillBadge from "@/components/SkillBadge";
 import DropdownFilter from "@/components/DropdownFilter";
 import {useCallback, useState} from "react";
 import {CategoriesFiltersType} from "@/types/categories";
+import {header} from "@/styles/shorthands";
 
 export default function Skills() {
 
@@ -23,7 +24,7 @@ export default function Skills() {
 
   return (
     <>
-      <h1 className="mb-4 mt-16 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+      <h1 className={header}>
       💡 <span className="mr-4">My skills</span>
         <DropdownFilter
           label="See more"
