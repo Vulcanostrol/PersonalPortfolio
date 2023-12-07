@@ -4,9 +4,7 @@ import {header, timePeriodText} from "@/styles/shorthands";
 export default function WorkExperience() {
   return (
     <>
-      <h1 className={header}>
-        💼 My experience
-      </h1>
+      <h1 className={header}>💼 My experience</h1>
       <Accordion
         header={(
           <>
@@ -14,7 +12,7 @@ export default function WorkExperience() {
             <p className={timePeriodText}>
               <time dateTime="2023-06-01" title="June, 2023">June, 2023</time>
               &nbsp;-&nbsp;
-              <time dateTime="2023-10-01" title="October, 2023">October, 2023</time>
+              <time dateTime="2023-11-01" title="November, 2023">November, 2023</time>
             </p>
           </>
         )}
@@ -46,6 +44,13 @@ export default function WorkExperience() {
             </p>
           </>
         )}
+        summary={(
+          <ul className="list-disc list-inside">
+            <li className="mt-1">Researched state-of-the-art ML methods in time-series forecasting.</li>
+            <li className="mt-1">Developed/implemented (from scratch) a new model using brand-new (2023) technology.</li>
+            <li className="mt-1">Deployed the model with a simple REST API on a custom Kubernetes cluster.</li>
+          </ul>
+        )}
       />
       <Accordion
         header={(
@@ -54,7 +59,7 @@ export default function WorkExperience() {
             <p className={timePeriodText}>
               <time dateTime="2019-01-01" title="January, 2019">January, 2019</time>
               &nbsp;-&nbsp;
-              <time dateTime="2023-10-01" title="November, 2023">November, 2023</time>
+              <time dateTime="2023-10-01" title="October, 2023">October, 2023</time>
             </p>
           </>
         )}
@@ -84,6 +89,14 @@ export default function WorkExperience() {
             </ul>
         </>
         )}
+        summary={(
+          <ul className="list-disc list-inside">
+            <li className="mt-1">Co-founded a student startup. Won &lsquo;Best Startup of the University of Twente 2020&rsquo;.</li>
+            <li className="mt-1">Led a team of 3 software developers/ML researchers and 2 UX/UI developers.</li>
+            <li className="mt-1">Developed, deployed, and maintained a music streaming infrastructure with ML microservices.</li>
+            <li className="mt-1">Researched and developed state-of-the-art music machine-learning models.</li>
+          </ul>
+        )}
       />
       <Accordion
         header={(
@@ -105,6 +118,42 @@ export default function WorkExperience() {
               communication and pathing efficiencies.
             </p>
           </>
+        )}
+        summary={(
+          <ul className="list-disc list-inside mb-16">
+            <li className="mt-1">Worked with other analysts to give players insights into their gameplay.</li>
+            <li className="mt-1">Set up data gathering and processing pipeline from scratch. These are now used by newer data analysis teams.</li>
+            <li className="mt-1">Developed ML model that forecasts match outcome. This model was then studied to find out important factors that determine the outcome of a match.</li>
+          </ul>
+        )}
+      />
+      <Accordion
+        header={(
+          <>
+            Board: student startup accelerator (Hive01)
+            <p className={timePeriodText}>
+              <time dateTime="2019-06-01" title="June, 2019">June, 2019</time>
+              &nbsp;-&nbsp;
+              <time dateTime="2020-02-01" title="February, 2020">February, 2020</time>
+            </p>
+          </>
+        )}
+        body={(
+          <>
+            <p>
+              In the board of Hive01, I was responsible for organising lectures and events for students to learn the
+              basics of entrepreneurship. I communicated with participants of the programme about what their needs were
+              in the programme, and gave them feedback on their business models. I also communicated with external
+              speakers and organised some workshops myself.
+            </p>
+          </>
+        )}
+        summary={(
+          <ul className="list-disc list-inside">
+            <li className="mt-1">Organised events and lectures for students to learn basics of entrepreneurship.</li>
+            <li className="mt-1">Communicated with participants about their needs from the programme, and gave feedback on their business models.</li>
+            <li className="mt-1">Worked with external speakers to organise workshops and lectures.</li>
+          </ul>
         )}
       />
     </>

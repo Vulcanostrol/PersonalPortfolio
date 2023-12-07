@@ -3,6 +3,7 @@ import React, {useCallback, useState, useMemo} from "react";
 type Props = {
     header: JSX.Element | React.ReactElement | string;
     body?: JSX.Element | React.ReactElement | string;
+    summary?: JSX.Element | React.ReactElement | string;
 };
 
 export default function Accordion(props: Props) {
@@ -36,8 +37,15 @@ export default function Accordion(props: Props) {
             </h2>
             {props.body &&
             <div>
-                <div className={`${collapsedClass} p-5 border border-t-0 border-gray-200 rounded-b-xl dark:border-gray-700 dark:bg-gray-900 print:border-none print:p-0`}>
+                <div className={`${collapsedClass} p-5 border border-t-0 border-gray-200 rounded-b-xl dark:border-gray-700 dark:bg-gray-900 print:hidden`}>
                     {props.body}
+                </div>
+            </div>
+            }
+            {props.summary &&
+            <div>
+                <div className="text-sm hidden print:block">
+                    {props.summary}
                 </div>
             </div>
             }
