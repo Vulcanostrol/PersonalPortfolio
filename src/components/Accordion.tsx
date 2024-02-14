@@ -24,7 +24,7 @@ export default function Accordion(props: Props) {
                 <button type="button" onClick={onHeaderClick} className={`${roundedClass} 
                 mt-4 flex items-center justify-between w-full p-5 font-medium text-left border border-gray-200
                 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:hover:bg-gray-800 
-                hover:bg-gray-100 print:border-none print:p-0`}>
+                hover:bg-gray-100 print:border-none print:p-0 print:mt-2`}>
                     <span>
                         {props.header}
                     </span>

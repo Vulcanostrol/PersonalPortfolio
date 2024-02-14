@@ -8,58 +8,11 @@ export default function WorkExperience() {
       <Accordion
         header={(
           <>
-            Machine Learning Engineer (GecoSistema)
-            <p className={timePeriodText}>
-              <time dateTime="2023-06-01" title="June, 2023">June, 2023</time>
-              &nbsp;-&nbsp;
-              <time dateTime="2023-11-01" title="November, 2023">November, 2023</time>
-            </p>
-          </>
-        )}
-        body={(
-          <>
-            <p>
-              I worked with <a href="https://gecosistema.com/" className="link-base">GecoSistema</a> during my master thesis. My thesis
-              tackled hydrological level forecasting with <acronym title="Machine Learning">ML</acronym> in Italian
-              rivers. This meant I had a good idea of the scientific landscape around hydrological forecasting algorithms
-              and the state-of-the-art.
-            </p>
-            <p className="mt-4">
-              After the <a href="https://en.wikipedia.org/wiki/2023_Emilia-Romagna_floods" className="link-base">Emilia-Romagna floods</a> in
-              2023, GecoSistema partnered with the European Union <a href="https://www.copernicus.eu/en" className="link-base">
-              Copernicus</a> project. I was involved with the project because of my master thesis, and I was responsible for building
-              a scalable system for hydrological forecasting in european rivers. This project will give european
-              citizens earlier warnings about flash floods, making evacuation more effective.
-            </p>
-            <p className="mt-4">
-              The project was done with <a href="https://pytorch.org/" className="link-base">
-                PyTorch
-              </a> and <a href="https://lightning.ai/pytorch-lightning" className="link-base">
-                Lightning
-              </a>. It required me to implement a new state-of-the-art <acronym title="Machine Learning">ML</acronym> model
-              from scratch. After this, I trained the model, tuned it and deployed it as an API on a <a href="https://kubernetes.io/" className="link-base">
-                Kubernetes
-              </a> cluster. Much more was involved in the project, and many things can still be improved about the system.
-              However, the project was quite short (June/July were preparatory, August/September were for execution).
-            </p>
-          </>
-        )}
-        summary={(
-          <ul className="list-disc list-inside">
-            <li className="mt-1">Researched state-of-the-art ML methods in time-series forecasting.</li>
-            <li className="mt-1">Developed/implemented (from scratch) a new model using brand-new (2023) technology.</li>
-            <li className="mt-1">Deployed the model with a simple REST API on a custom Kubernetes cluster.</li>
-          </ul>
-        )}
-      />
-      <Accordion
-        header={(
-          <>
-            Co-founder & CTO (Awaves)
+            Co-founder & ML Lead (Awaves)
             <p className={timePeriodText}>
               <time dateTime="2019-01-01" title="January, 2019">January, 2019</time>
               &nbsp;-&nbsp;
-              <time dateTime="2023-10-01" title="October, 2023">October, 2023</time>
+              <time dateTime="2024-02-01" title="February, 2024">February, 2024</time>
             </p>
           </>
         )}
@@ -92,9 +45,56 @@ export default function WorkExperience() {
         summary={(
           <ul className="list-disc list-inside">
             <li className="mt-1">Co-founded a student startup. Won &lsquo;Best Startup of the University of Twente 2020&rsquo;.</li>
-            <li className="mt-1">Led a team of 3 software developers/ML researchers and 2 UX/UI developers.</li>
-            <li className="mt-1">Developed, deployed, and maintained a music streaming infrastructure with ML microservices.</li>
             <li className="mt-1">Researched and developed state-of-the-art music machine-learning models.</li>
+            <li className="mt-1">Developed, deployed, and maintained ML microservices for the music streaming infrastructure.</li>
+            <li className="mt-1">Led a team of 3 software developers/ML researchers and 2 UX/UI developers.</li>
+          </ul>
+        )}
+      />
+      <Accordion
+        header={(
+          <>
+            Machine Learning Engineer (GecoSistema)
+            <p className={timePeriodText}>
+              <time dateTime="2023-06-01" title="June, 2023">June, 2023</time>
+              &nbsp;-&nbsp;
+              <time dateTime="2023-12-01" title="December, 2023">December, 2023</time>
+            </p>
+          </>
+        )}
+        body={(
+          <>
+            <p>
+              I worked with <a href="https://gecosistema.com/" className="link-base">GecoSistema</a> during my master thesis. My thesis
+              tackled hydrological level forecasting with <acronym title="Machine Learning">ML</acronym> in Italian
+              rivers. This meant I had a good idea of the scientific landscape around hydrological forecasting algorithms
+              and the state-of-the-art.
+            </p>
+            <p className="mt-4">
+              After the <a href="https://en.wikipedia.org/wiki/2023_Emilia-Romagna_floods" className="link-base">Emilia-Romagna floods</a> in
+              2023, GecoSistema partnered with the European Union <a href="https://www.copernicus.eu/en" className="link-base">
+              Copernicus</a> project. I was involved with the project because of my master thesis, and I was responsible for building
+              a scalable system for hydrological forecasting in european rivers. This project will give european
+              citizens earlier warnings about flash floods, making evacuation more effective.
+            </p>
+            <p className="mt-4">
+              The project was done with <a href="https://pytorch.org/" className="link-base">
+              PyTorch
+            </a> and <a href="https://lightning.ai/pytorch-lightning" className="link-base">
+              Lightning
+            </a>. It required me to implement a new state-of-the-art <acronym title="Machine Learning">ML</acronym> model
+              from scratch. After this, I trained the model, tuned it and deployed it as an API on a <a href="https://kubernetes.io/" className="link-base">
+              Kubernetes
+            </a> cluster. Much more was involved in the project, and many things can still be improved about the system.
+              However, the project was quite short (June/July were preparatory, August/September were for execution).
+            </p>
+          </>
+        )}
+        summary={(
+          <ul className="list-disc list-inside">
+            <li className="mt-1">Researched state-of-the-art ML methods in time-series forecasting.</li>
+            <li className="mt-1">Developed/implemented a new ML model from scratch in PyTorch Lightning.</li>
+            <li className="mt-1">Deployed the model with a REST API on a custom Kubernetes cluster.</li>
           </ul>
         )}
       />
@@ -121,9 +121,9 @@ export default function WorkExperience() {
         )}
         summary={(
           <ul className="list-disc list-inside mb-16">
-            <li className="mt-1">Worked with other analysts to give players insights into their gameplay.</li>
-            <li className="mt-1">Set up data gathering and processing pipeline from scratch. These are now used by newer data analysis teams.</li>
+            <li className="mt-1">Set up data gathering and processing pipeline from scratch. These are now used by the data analysis team.</li>
             <li className="mt-1">Developed ML model that forecasts match outcome. This model was then studied to find out important factors that determine the outcome of a match.</li>
+            <li className="mt-1">Worked with other analysts to give players insights into their gameplay.</li>
           </ul>
         )}
       />

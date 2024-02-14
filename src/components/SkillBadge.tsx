@@ -24,7 +24,7 @@ export default function SkillBadge(props: Props) {
   return (
     <span className={`${classNames} inline-block text-xs font-medium mr-2 mb-1 px-2.5 py-0.5 rounded`}>
       {props.skillName}
-      {[...Array(starAmount)].map(() => "⭐")}
+      {/*{[...Array(starAmount)].map(() => "⭐")}*/}
     </span>
   )
 }

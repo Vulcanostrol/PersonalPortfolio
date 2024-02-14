@@ -1,5 +1,5 @@
 import Accordion from "@/components/Accordion";
-import {header, timePeriodText} from "@/styles/shorthands";
+import {header} from "@/styles/shorthands";
 
 export default function Expertise() {
   return (
